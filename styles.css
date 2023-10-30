@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url(body-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.9);
+    height: calc(4rem);
+    padding: 0 10px;
+    backdrop-filter: blur(5px);
+    color: black;
+}
+header h1 {
+    font-size: 2rem;
+    margin-left: 40px;
+    left: 0;
+}
+.nav-items a {
+    margin-right: 50px;
+    color: #54088b;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.container {
+    width: 40%;
+    min-width: 350px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 20px;
+}
+
+.container .signin form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.container .signin form div i{
+    font-size: 1.4em;
+    color: white;
+    opacity: .7;
+}
+.container .signin form div input {
+    width: 230px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: large;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+}
+.container .signin form div input:focus {
+    outline: none;
+    
+}
+.container .buttons {
+    margin-top: 40px;
+}
+.container .buttons button{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 10px;
+    color: purple;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+
+}
+.container .misc {
+    color: white;
+    font-size: large;
+}
+.container .buttons button:focus {
+    background: purple;
+    color: white;
+    outline: none;
+}
+
+@media screen and (max-width: 750px) {
+    header .nav-items a:not(.user){
+        display: none;
+    }
+    header h1 {
+        margin-left: 20px;
+
+    }
+    .nav-items a {
+        margin-right: 30px;
+        
+    }
+}   
+
